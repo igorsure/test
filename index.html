@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<header>
+<title>Test igor</title>
+
+</header>
+<body>
+Hello Igor!<br/>
+<button id='btnPushme'>Push me</button>
+<button id='btnPushme'>Clear</button>
+<div id="results"></div>
+<script src='js/zepto.min.js'></script>
+<script>
+$("#btnPushme").click(function(){
+	alert(Date());
+	$("#results").prepend('hello<br/>');
+})
+$("#btnPushme").click(function(){
+	$("#results").html('');
+})
+</script>
+</body>
+</html>
